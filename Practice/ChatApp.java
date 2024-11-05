@@ -12,7 +12,7 @@ public class ChatApp extends JFrame {
 
     public ChatApp() {
         setTitle("Chat Application");
-        setSize(1920,1080);
+        setSize(720,620);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
@@ -71,6 +71,7 @@ public class ChatApp extends JFrame {
     // Add new contact
     private void addContact() {
         String contactName = JOptionPane.showInputDialog(this, "Enter Contact Name:");
+        String phoneNumber = JOptionPane.showInputDialog(this, "Enter Contact Phone Number : ");
         if (contactName != null && !contactName.trim().isEmpty()) {
             contactsModel.addElement(contactName.trim());
         }
